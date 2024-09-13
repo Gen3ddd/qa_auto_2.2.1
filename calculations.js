@@ -1,15 +1,15 @@
 function increaseBalance(balance, delta) {
-  balance = balance + delta;
+  balance += delta;
   return balance;
 }
 
 function decreaseBalance(balance, delta) {
-  balance = balance - delta;
+  balance -= delta;
   return balance;
 }
 
 function divideBalanceByAccounts(balance, numberOfAccounts) {
-  balance = balance / numberOfAccounts;
+  balance /= numberOfAccounts;
   if (numberOfAccounts === 0) {
     return "На ноль делить нельзя";
   } else {
@@ -18,7 +18,7 @@ function divideBalanceByAccounts(balance, numberOfAccounts) {
 }
 
 function getRestAfterDivision(dividend, divisor) {
-  dividend = dividend % divisor;
+  dividend %= divisor;
 
   if (divisor === 0) {
     return "На ноль делить нельзя";
